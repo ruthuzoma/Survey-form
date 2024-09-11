@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      A survey form to get water scarcity problem in Abuja.
+    </p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name"
+          >Enter your fullname:
+          <input
+            type="text"
+            id="name"
+            name="name-label"
+            required
+            placeholder="John Doe"
+          />
+        </label>
+        <label id="email-label" for="email"
+          >Enter your email address: <input type="email" id="email" name="email"
+          required placeholder="johndoe1234@gmail.com"</label
+        >
+        <label id="number-label" for="number"
+          >How many of you live in the household? <input class="household"
+          type="number" id="number" placeholder="5" name="household-figure"
+          min="1" max="20" required</label
+        >
+
+        <label class="age-range" for="age"
+          >What is your age range?
+          <select id="dropdown" name="age-range" required>
+            <option value="">(pick one option)</option>
+            <option value="1">18-25</option>
+            <option value="2">26-35</option>
+            <option value="3">36-50</option>
+            <option value="4">50-above</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Please choose the appropriate answer</legend>
+
+        <label for="house-owner"
+          >Are you the house owner?
+          <input
+            value="Yes"
+            type="radio"
+            id="house-owner"
+            name="house-situation"
+            checked
+        /></label>
+        <label for="tenant"
+          >Are you renting the apartment?
+          <input value="No" type="radio" id="tenant" name="house-situation"
+        /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Please tick the appropriate answer</legend>
+        <ol>
+          <li>
+            What actions have you taken to reduce water usage in your household?
+          </li>
+
+          <label
+            >Installed low-flow faucets/showerheads <input value="yes"
+            type="checkbox"</label
+          >
+          <label
+            >Fixed leaking pipes/faucets <input
+            value="yes"type="checkbox"</label
+          >
+          <label
+            >Reused household water (e.g., for gardening) <input value="yes"
+            type="checkbox"</label
+          >
+          <label>No actions taken <input value="yes" type="checkbox"</label>
+
+          <li>What alternative water sources do you rely on, if any?</li>
+
+          <label>Rainwater harvesting <input value="yes" type="checkbox"</label>
+          <label> Borehole/well water <input value="yes" type="checkbox"</label>
+          <label>Buying bottled water <input value="yes" type="checkbox"</label>
+          <label>None <input value="yes" type="checkbox"</label>
+
+          <li>How frequently do you experience water shortages?</li>
+
+          <label>Daily <input value="yes" type="checkbox"</label>
+          <label>Weekly <input value="yes" type="checkbox"</label>
+          <label>Monthly <input value="yes" type="checkbox"</label>
+          <label>Rarely <input value="yes" type="checkbox"</label>
+
+          <li>How has water scarcity affected your household?</li>
+
+          <label
+            >Increased water bills <input value="yes" type="checkbox"</label
+          >
+          <label
+            >Reduced water usage for household chores <input value="yes"
+            type="checkbox"</label
+          >
+          <label
+            >Difficulty maintaining a garden/lawn <input value="yes"
+            type="checkbox"</label
+          >
+          <label
+            >No significant impact <input value="yes" type="checkbox"</label
+          >
+
+          <li>
+            What measures would you support to address water scarcity in your
+            area?
+          </li>
+
+          <label
+            >Stricter water usage regulations <input value="yes"
+            type="checkbox"</label
+          >
+          <label
+            >Government-subsidized water-saving technologies <input value="yes"
+            type="checkbox"</label
+          >
+          <label
+            >Public awareness campaigns <input value="yes"
+            type="checkbox"</label
+          >
+          <label>None <input value="yes" type="checkbox"</label>
+        </ol>
+        <label for="comments">
+          Comment on possible solution to the water problem
+          <textarea
+            class="comment"
+            id="comments"
+            name="comments"
+            rows="3"
+            cols="30"
+            placeholder="Government should subsidize water saving technologies."
+            required
+          ></textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
